@@ -42,9 +42,12 @@ namespace steamer
 
         static void Main(string[] args)
         {
+            Console.Write("Login: ");
             string login = Console.ReadLine();
+            Console.Write("Password: ");
             string password = Console.ReadLine();
             const int appId = 6642279;
+
             ConfigureLogger();
             Logger = NLog.LogManager.GetCurrentClassLogger();
 
